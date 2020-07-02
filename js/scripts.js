@@ -6,9 +6,6 @@ var pokemonList = [
 ]
 
 
-pokemonList.forEach(function(pokemon) {
-  document.write(`<h2>${pokemonList[i].name}</h2> Height: ${pokemonList[i].height}`);
-if (pokemonList[i].types.length > 1) {
-  document.write('<h3>' + 'Wow, that\'s a lot of types!' + '</h3>')
-  }
-}
+pokemonList.forEach(function(pokemonList) {
+  document.write('<h2>' + pokemonList.name + '</h2>' + ' Height: ' + pokemonList.height);
+});
