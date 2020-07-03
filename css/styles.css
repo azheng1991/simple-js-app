@@ -1,3 +1,12 @@
+header {
+    background-color:#ECF3F3;
+}
+
+footer {
+    background-color:#ECF3F3;
+}
+
+
 ul {
     text-align: center;
     position: absolute;
@@ -5,9 +14,10 @@ ul {
     margin: 10px auto 0;
     padding: 10px;
     box-sizing: border-box;
+    list-style: none
   }
 
-  .pokemon-name: {
+  .pokemon-name {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -22,4 +32,3 @@ ul {
     cursor: pointer;
     opacity: 0.8;
   }
-
