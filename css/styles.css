@@ -1,14 +1,27 @@
-
 header {
-    background-color:#ECF3F3;
-}
+    background-color: #ecf3f3;
+    position: sticky;
+  }
+  footer {
+    background-color: #ecf3f3;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media p {
+    font-size: 16px;
+    margin: 10px;
+  }
 
-
-ul {
-    text-align: left;
-    position: absolute;
+.pokemon-list {
+    text-align: center;
     width: 95%;
-    margin: 10px auto 0;
+    margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
     list-style: none
@@ -16,6 +29,8 @@ ul {
 
   .pokemon-name {
     background-color: #4CAF50; /* Green */
+    margin: 10px auto;
+    width: 200px;
     border: none;
     color: white;
     padding: 15px 32px;
