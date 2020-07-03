@@ -1,4 +1,5 @@
 var pokemonRepository = (function() {    
+  var repository=[];
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
   var $pokemonList = document.querySelector('ul');
   //Function to add new Pokemon data
