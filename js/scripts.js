@@ -1,24 +1,19 @@
 var pokemonRepository = (function() {    
-  var repository = [];
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
   var $pokemonList = document.querySelector('ul');
- 
   //Function to add new Pokemon data
   function add(pokemon) {
     repository.push(pokemon);
     }
- 
   //Function to pull all Pokemon data
   function getAll() {
     return repository;
   }
- 
   //Function to add list for each pokemon object
   function addListItem(pokemon) {
     var listItem = document.createElement('li');
     var button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add('show-modal');
     button.classList.add('pokemon-name');
     listItem.appendChild(button);
     $pokemonList.appendChild(listItem)
@@ -26,7 +21,6 @@ var pokemonRepository = (function() {
       showDetails(pokemon)
     })
   }
- 
   //Function to load pokemon list from API
   function loadList() {
     return fetch(apiUrl).then(function(response) {
@@ -62,13 +56,10 @@ var pokemonRepository = (function() {
    //Function to show details of each Pokemon
    function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function() {
-      console.log(item);
-      return item;
-    }).then(function(item) {
-      console.log('TCL: showDetails -> item', item);
-      showModal(item);
-    });
-  }
+    console.log(item);
+    return item;
+    })
+    }
 
   return{
     add: add,
