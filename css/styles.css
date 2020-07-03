@@ -1,14 +1,11 @@
-header {
-    background-color:#ECF3F3;
-}
 
-footer {
+header {
     background-color:#ECF3F3;
 }
 
 
 ul {
-    text-align: center;
+    text-align: left;
     position: absolute;
     width: 95%;
     margin: 10px auto 0;
